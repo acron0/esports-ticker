@@ -5,12 +5,12 @@
 (defrecord Database [host port]
   component/Lifecycle
   (start [component]
-    (log/info "Starting database")
+    (log/info "- Starting database")
     (let [conn 123]
       (assoc component :connection conn)))
 
   (stop [component]
-    (log/info "Stopping database")
+    (log/info "- Stopping database")
     (assoc component :connection nil)))
 
 (defn make!
