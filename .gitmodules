@@ -1,0 +1,3 @@
+[submodule "ext/abios-clj"]
+	path = ext/abios-clj
+	url = git@github.com:acron0/abios-clj.git
